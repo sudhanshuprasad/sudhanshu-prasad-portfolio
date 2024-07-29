@@ -28,14 +28,24 @@ function Contact() {
     /* Uncomment below if you want to enable the emailJS */
 
     if (name !== '' && email !== '' && message !== '') {
-      var templateParams = {
+      const templateParams = {
         name: name,
         email: email,
         message: message
       };
 
-      console.log(templateParams);
-      emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
+      // console.log(templateParams);
+      // console.log({
+      //   'sk':process.env.REACT_APP_SERVICE_ID,
+      //   'tk':process.env.REACT_APP_TEMPLATE_ID,
+      //   'params':templateParams,
+      //   'pub api':process.env.REACT_APP_PUBLIC_API_KEY})
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID||'',
+        process.env.REACT_APP_TEMPLATE_ID||'',
+        templateParams,
+        process.env.REACT_APP_PUBLIC_API_KEY
+      ).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },
