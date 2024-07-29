@@ -14,14 +14,16 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Toolbar from '@mui/material/Toolbar';
+import { Link } from 'react-router-dom'
 
 const drawerWidth = 240;
 const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
 
-function Navigation({parentToChild, modeChange}: any) {
+function Navigation({ parentToChild, modeChange }: any) {
 
-  const {mode} = parentToChild;
+  const { mode } = parentToChild;
 
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -59,7 +61,7 @@ function Navigation({parentToChild, modeChange}: any) {
 
   const drawer = (
     <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
+      <p className="mobile-menu-top"><ListIcon />Menu</p>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -69,6 +71,22 @@ function Navigation({parentToChild, modeChange}: any) {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem disablePadding>
+          <a href="https://drive.usercontent.google.com/u/0/uc?id=1SjOJF9I3q2YqM0Yfm2w3W-oGEAmGQrqe&export=download" download>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText primary={
+                <Button
+                  variant='outlined'
+                  endIcon={<FileDownloadIcon />}
+                  onClick={() => { console.log("tfcvgdysy") }}
+                  sx={{ color: '#000' }}
+                >
+                  Resume
+                </Button>
+              } />
+            </ListItemButton>
+          </a>
+        </ListItem>
       </List>
     </Box>
   );
@@ -88,9 +106,9 @@ function Navigation({parentToChild, modeChange}: any) {
             <MenuIcon />
           </IconButton>
           {mode === 'dark' ? (
-            <LightModeIcon onClick={() => modeChange()}/>
+            <LightModeIcon onClick={() => modeChange()} />
           ) : (
-            <DarkModeIcon onClick={() => modeChange()}/>
+            <DarkModeIcon onClick={() => modeChange()} />
           )}
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -98,6 +116,16 @@ function Navigation({parentToChild, modeChange}: any) {
                 {item[0]}
               </Button>
             ))}
+            <a href="https://drive.usercontent.google.com/u/0/uc?id=1SjOJF9I3q2YqM0Yfm2w3W-oGEAmGQrqe&export=download" download>
+              <Button
+                variant='outlined'
+                endIcon={<FileDownloadIcon />}
+                onClick={() => { console.log("tfcvgdysy") }}
+                sx={{ color: '#fff' }}
+              >
+                Resume
+              </Button>
+            </a>
           </Box>
         </Toolbar>
       </AppBar>

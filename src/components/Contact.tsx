@@ -110,14 +110,17 @@ function Contact() {
               helperText={messageError ? "Please enter the message" : ""}
             />
 
-            <Button
-              variant="contained"
-              endIcon={<SendIcon />}
-              onClick={sendEmail}
-              sx={{ color: 'black', backgroundColor: 'white', float: 'right', marginY: '15px' }}
-            >
-              Send
-            </Button>
+            <div className='contact-form'>
+              <Button
+                // className='contact-form'
+                variant="contained"
+                endIcon={<SendIcon />}
+                onClick={sendEmail}
+                sx={{ color: 'black', backgroundColor: 'white', float: 'right' }}
+              >
+                Send
+              </Button>
+            </div>
           </Box>
         </div>
       </div>

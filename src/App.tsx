@@ -6,11 +6,12 @@ import Expertise from './components/Expertise.tsx';
 import Timeline from './components/Timeline.tsx';
 import Project from './components/Project.tsx';
 import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
 import './index.scss';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App() {
-    const [mode, setMode] = useState < 'light' | 'dark' > ('dark');
+    const [mode, setMode] = useState<'light' | 'dark'>('dark');
 
     const handleModeChange = () => {
         if (mode === 'dark') {
@@ -42,12 +43,12 @@ function App() {
                 <Main />
                 <Expertise />
                 <Timeline />
-            <ThemeProvider theme={theme}>
-                {/* <Project/> */}
-                <Contact />
-            </ThemeProvider>
+                <ThemeProvider theme={theme}>
+                    {/* <Project /> */}
+                    <Contact />
+                </ThemeProvider>
             </FadeIn>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 }
