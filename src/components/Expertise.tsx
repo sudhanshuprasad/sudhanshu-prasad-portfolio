@@ -2,6 +2,7 @@ import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDiagramProject, faMicrochip } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -10,9 +11,6 @@ const labelsFirst = [
     "TypeScript",
     "JavaScript",
     "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
     "Python",
     "SQL",
     "PostgreSQL",
@@ -24,21 +22,19 @@ const labelsSecond = [
     "GitHub Actions",
     "Docker",
     "AWS",
-    "Azure",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Arduino",
+    "Raspberry Pi",
+    "Esp32",
+    "C++",
+    "MicroPython",
+    "ArduPilot",
+    "MavLink",
+    "Sitl",
+    "PyMavLink"
 ];
 
 function Expertise() {
@@ -47,10 +43,11 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
+                
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Next for frontend. For backend I have worked with Nest and Node. I also have experiance with SQL and NoSQL database. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -72,9 +69,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                <FontAwesomeIcon icon={faMicrochip} size="3x"/>
+                    <h3>IoT & Drones</h3>
+                    <p>I have professinal experiance with Drone and Iot devices. I have built multiple IoT based solutions which have solved real world problems. I have professional experience building enterprise grade IoT-based solutions to automate manual tasks.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
@@ -82,6 +79,19 @@ function Expertise() {
                         ))}
                     </div>
                 </div>
+                
+                {/* <div className="skill">
+                <FontAwesomeIcon icon={faMicrochip} size="3x"/>
+                    <h3>IoT & Drones</h3>
+                    <p>I have professinal experiance withI have built multiple IoT based solutions which have solved real world problems. I have professional experience building enterprise grade IoT-based solutions to automate manual tasks.</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Tech stack:</span>
+                        {labelsThird.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div> */}
+
             </div>
         </div>
     </div>

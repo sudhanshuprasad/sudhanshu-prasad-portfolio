@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import FadeIn from './components/FadeIn.tsx';
 import Main from './components/Main.tsx';
 import Navigation from './components/Navigation.tsx';
+import Expertise from './components/Expertise.tsx';
 import './index.scss';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
         <FadeIn transitionDuration={700}>
             <Main/>
-            {/* <Expertise/> */}
+            <Expertise/>
             {/* <Timeline/> */}
             {/* <Project/> */}
             {/* <Contact/> */}
