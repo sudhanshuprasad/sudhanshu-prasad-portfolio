@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -27,26 +27,26 @@ function Contact() {
 
     /* Uncomment below if you want to enable the emailJS */
 
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
+    if (name !== '' && email !== '' && message !== '') {
+      var templateParams = {
+        name: name,
+        email: email,
+        message: message
+      };
 
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+      console.log(templateParams);
+      emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
@@ -60,11 +60,13 @@ function Contact() {
             component="form"
             noValidate
             autoComplete="off"
-            className='contact-form'
+          //  className='contact-form'
           >
             <div className='form-flex'>
               <TextField
+                // sx={{ color: 'white', input:{fontColour:'white'} }}
                 required
+                // color='white'
                 id="outlined-required"
                 label="Your Name"
                 placeholder="What's your name?"
@@ -76,6 +78,7 @@ function Contact() {
                 helperText={nameError ? "Please enter your name" : ""}
               />
               <TextField
+                // sx={{ color: 'black', backgroundColor: 'white', borderRadius: 2 }}
                 required
                 id="outlined-required"
                 label="Email / Phone"
@@ -89,13 +92,16 @@ function Contact() {
               />
             </div>
             <TextField
+              // className='whiteBG'
+              // sx={{ color: 'black' }}
+              fullWidth
               required
               id="outlined-multiline-static"
               label="Message"
               placeholder="Send me any inquiries or questions"
               multiline
               rows={10}
-              className="body-form"
+              // className="body-form"
               value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
@@ -103,7 +109,13 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+
+            <Button
+              variant="contained"
+              endIcon={<SendIcon />}
+              onClick={sendEmail}
+              sx={{ color: 'black', backgroundColor: 'white', float: 'right', marginY: '15px' }}
+            >
               Send
             </Button>
           </Box>
