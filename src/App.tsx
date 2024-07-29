@@ -3,6 +3,9 @@ import FadeIn from './components/FadeIn.tsx';
 import Main from './components/Main.tsx';
 import Navigation from './components/Navigation.tsx';
 import Expertise from './components/Expertise.tsx';
+import Timeline from './components/Timeline.tsx';
+import Project from './components/Project.tsx';
+import Contact from './components/Contact.tsx';
 import './index.scss';
 
 function App() {
@@ -26,9 +29,9 @@ function App() {
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>
-            {/* <Timeline/> */}
+            <Timeline/>
             {/* <Project/> */}
-            {/* <Contact/> */}
+            <Contact/>
         </FadeIn>
         {/* <Footer /> */}
     </div>

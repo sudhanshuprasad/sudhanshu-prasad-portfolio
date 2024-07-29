@@ -12,7 +12,8 @@ function Timeline() {
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
-          <VerticalTimelineElement
+
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
@@ -25,8 +26,9 @@ function Timeline() {
             <p>
               Full-stack Web Development, GenAI/LLM, Project Management, Business Development
             </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
+          </VerticalTimelineElement> */}
+
+          {/* <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2020 - 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
@@ -37,31 +39,36 @@ function Timeline() {
             <p>
               Frontend Development, Backend Development, User Experience, Team Leading
             </p>
-          </VerticalTimelineElement>
+          </VerticalTimelineElement> */}
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="Jan 2024 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Full Stack Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bhubneshwar, Odisha</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Full-stack Development, Frontend Development (NextJS), API Development (NestJS), Deployment (AWS)
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="June 2023 - Dec 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">Drone Development Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bhubneshwar, Odisha</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+            Assisted the software development for 5G enabled drone using MavLink and MQTT
+            <br/>
+            Developed a software to control swarm of drones. (Used MavLink)
             </p>
           </VerticalTimelineElement>
+
         </VerticalTimeline>
       </div>
     </div>
