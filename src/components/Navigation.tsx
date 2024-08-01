@@ -72,7 +72,7 @@ function Navigation({ parentToChild, modeChange }: any) {
           </ListItem>
         ))}
         <ListItem disablePadding>
-          <a href="https://drive.usercontent.google.com/u/0/uc?id=1SjOJF9I3q2YqM0Yfm2w3W-oGEAmGQrqe&export=download" download>
+          <a href="https://drive.usercontent.google.com/uc?id=1sR3Lb-IF62jpQqE7ul0o2PrYh1JsVrV9&export=download" download>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText primary={
                 <Button
@@ -116,7 +116,7 @@ function Navigation({ parentToChild, modeChange }: any) {
                 {item[0]}
               </Button>
             ))}
-            <a href="https://drive.usercontent.google.com/u/0/uc?id=1SjOJF9I3q2YqM0Yfm2w3W-oGEAmGQrqe&export=download" download>
+            <a href="https://drive.usercontent.google.com/uc?id=1sR3Lb-IF62jpQqE7ul0o2PrYh1JsVrV9&export=download" download>
               <Button
                 variant='outlined'
                 endIcon={<FileDownloadIcon />}
