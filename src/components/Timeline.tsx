@@ -2,7 +2,7 @@ import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
@@ -28,18 +28,20 @@ function Timeline() {
             </p>
           </VerticalTimelineElement> */}
 
-          {/* <VerticalTimelineElement
+          <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2020 - 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Software Developer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Hydrabad</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Extremely Low Latency Video Transmission System for Drone Video Broadcast system,<br/>
+              React Native android app to control IoT devices,<br/>
+              NextJs app to determine if the conditions are safe for fishermen to go to the sea<br/>
             </p>
-          </VerticalTimelineElement> */}
+          </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -63,9 +65,9 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Drone Development Intern</h3>
             <h4 className="vertical-timeline-element-subtitle">Bhubneshwar, Odisha</h4>
             <p>
-            Assisted the software development for 5G enabled drone using MavLink and MQTT
-            <br/>
-            Developed a software to control swarm of drones. (Used MavLink)
+              Assisted the software development for 5G enabled drone using MavLink and MQTT
+              <br />
+              Developed a software to control swarm of drones. (Used MavLink)
             </p>
           </VerticalTimelineElement>
 
