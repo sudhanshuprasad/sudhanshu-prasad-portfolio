@@ -13,61 +13,72 @@ function Timeline() {
         <h1>Career History</h1>
         <VerticalTimeline>
 
-          {/* <VerticalTimelineElement
+          <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
-            contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="Nov 2025 - Present"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Software Developer II</h3>
+            <h4 className="vertical-timeline-element-subtitle">1Stay, Ranchi</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Built automatic failover between 2 payment gateways (Razorpay and Cashify), sustaining ~99% payment success.<br/>
+              Integrated WhatsApp notifications generating ~20-25 booking/payment PDFs per day.<br/>
+              Built internal portals for 5,000 properties and published 2 apps (iOS/Android).<br/>
             </p>
-          </VerticalTimelineElement> */}
+          </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="Aug 2024 - Nov 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Software Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Hydrabad</h4>
+            <h4 className="vertical-timeline-element-subtitle">Dshak, Hyderabad</h4>
             <p>
-              Extremely Low Latency Video Transmission System for Drone Video Broadcast system,<br/>
-              React Native android app to control IoT devices,<br/>
-              NextJs app to determine if the conditions are safe for fishermen to go to the sea<br/>
+              Built video transmission and broadcast for drone IoT networks with latency under 100 ms.<br/>
+              Developed backend APIs and full-stack features using React Native and Next.js.<br/>
             </p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Jan 2024 - Present"
+            date="Jan 2024 - Aug 2024"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Developer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bhubneshwar, Odisha</h4>
+            <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">GrowYT, Bhubaneswar</h4>
             <p>
-              Full-stack Development, Frontend Development (NextJS), API Development (NestJS), Deployment (AWS)
+              Built responsive, scalable apps with Next.js, PostgreSQL, and AWS.<br/>
+              Replaced manual deployments with automated CI/CD using GitHub Actions and Docker.<br/>
             </p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="June 2023 - Dec 2023"
+            date="Jul 2023 - Dec 2023"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Drone Development Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bhubneshwar, Odisha</h4>
+            <h3 className="vertical-timeline-element-title">Software Development Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">IG Drones, Bhubaneswar</h4>
             <p>
-              Assisted the software development for 5G enabled drone using MavLink and MQTT
-              <br />
-              Developed a software to control swarm of drones. (Used MavLink)
+              Developed a TCP drone communication platform and swarm apps (REST, MQTT) supporting a 10-drone swarm.<br/>
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Mar 2020 - Jun 2024"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">B.Tech in Computer Science</h3>
+            <h4 className="vertical-timeline-element-subtitle">Institute of Technical Education and Research, Bhubaneswar</h4>
+            <p>
+              Bachelor of Technology in Computer Science
             </p>
           </VerticalTimelineElement>
 

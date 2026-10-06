@@ -44,7 +44,7 @@ function App() {
                 <Expertise />
                 <Timeline />
                 <ThemeProvider theme={theme}>
-                    {/* <Project /> */}
+                    <Project />
                     <Contact />
                 </ThemeProvider>
             </FadeIn>
