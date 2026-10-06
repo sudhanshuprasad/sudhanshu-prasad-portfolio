@@ -18,22 +18,35 @@ function Project() {
         <div className="projects-grid">
             <div className="project">
                 <h2>Flowbyte</h2>
-                <p>Water pump controller that tracks daily household water usage and automatically regulates supply. Senses tank water level with an ultrasonic sensor and operates offline. Load tested with 100K devices each sending an MQTT message every minute (~1,700 messages/sec). Features ESP32 firmware, MQTT broker with mutual TLS (private CA), and a Node.js backend.</p>
+                <ul>
+                    <li>Water pump controller that tracks daily household water usage and automatically regulates supply.</li>
+                    <li>Senses tank water level with an ultrasonic sensor and operates offline.</li>
+                    <li>Load tested with 100K devices each sending an MQTT message every minute (~1,700 messages/sec).</li>
+                    <li>Features ESP32 firmware, MQTT broker with mutual TLS (private CA), and a Node.js backend.</li>
+                </ul>
                 <p><strong>Stack:</strong> ESP32 (Arduino/PlatformIO), React Native, Node.js, Docker, Redis, MQTT, MongoDB, PostgreSQL, Google OAuth.</p>
             </div>
             <div className="project">
-                <a href="https://play.google.com/store/apps/details?id=com.hodotriphopper&hl=en_IN" target="_blank" rel="noreferrer"><h2>Hodo App</h2></a>
-                <p>Freelance project where I delivered a published Android app available on the Google Play Store.</p>
-                <p><strong>Website:</strong> <a href="https://www.hodoapp.com/" target="_blank" rel="noreferrer">hodoapp.com</a></p>
+                <a href="https://bulbuldelivery.com/" target="_blank" rel="noreferrer"><h2>Bulbul Delivery (Freelance)</h2></a>
+                <ul>
+                    <li>Worked on the frontend website control panel to manage drone missions.</li>
+                    <li>Built the software that connects a FastAPI backend to drones for autonomous flights using PyMavlink.</li>
+                </ul>
+                <p><strong>Website:</strong> <a href="https://bulbuldelivery.com/" target="_blank" rel="noreferrer">bulbuldelivery.com</a></p>
             </div>
             <div className="project">
                 <h2>Robotic Pick and Place Arm with OpenCV</h2>
-                <p>Developed a real-time robotic control system using Python and ArUco markers for computer vision. Implemented inverse kinematics on Arduino for precise arm movements.</p>
+                <ul>
+                    <li>Developed a real-time robotic control system using Python and ArUco markers for computer vision.</li>
+                    <li>Implemented inverse kinematics on Arduino for precise arm movements.</li>
+                </ul>
             </div>
             <div className="project">
                 <h2>Patents & Open Source</h2>
-                <p><strong>Patents:</strong> Patent application No. 202231054142 (Force Based Single Handed UAV Controller). Indian Design Patents: No. 368946-001, No. 367119-001.</p>
-                <p><strong>Open Source:</strong> Contributions to ArduPilot (drone software).</p>
+                <ul>
+                    <li><strong>Patents:</strong> Patent application No. 202231054142 (Force Based Single Handed UAV Controller), Indian Design Patents: No. 368946-001, No. 367119-001.</li>
+                    <li><strong>Open Source:</strong> Contributions to ArduPilot (drone software).</li>
+                </ul>
             </div>
         </div>
     </div>
